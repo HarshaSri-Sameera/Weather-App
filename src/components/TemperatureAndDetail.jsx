@@ -1,10 +1,11 @@
+/* eslint-disable react/prop-types */
 import { PiThermometerDuotone } from "react-icons/pi";
 import { WiHumidity } from "react-icons/wi";
 import { GiPaperWindmill } from "react-icons/gi";
 import { BsSunrise, BsSunset } from "react-icons/bs";
 import { TbArrowBigUp, TbArrowBigDown } from "react-icons/tb";
 
-function TemperatureAndDetail(weather, units) {
+function TemperatureAndDetail({ weather, units }) {
   const {
     details,
     icon,
@@ -16,7 +17,7 @@ function TemperatureAndDetail(weather, units) {
     speed,
     humidity,
     feels_like,
-  } = weather.weather;
+  } = weather;
 
   const extraDetails = [
     {
