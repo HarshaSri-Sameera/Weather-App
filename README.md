@@ -1,4 +1,4 @@
-# check it out: https://darkfire-weather-app.netlify.app/
+# check the weather App: https://darkfire-weather-app.netlify.app/
 ### React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
