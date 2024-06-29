@@ -76,12 +76,12 @@ function TemperatureAndDetail({ weather, units }) {
 
   return (
     <div>
-      <div className="flex items-center justify-center py-6 text-xl text-fuchsia-800">
+      <div className="flex items-center justify-center py-6 text-xl text-lime-100">
         <p>{details}</p>
       </div>
 
       <div className="flex flex-row justify-between items-center py-3">
-        <img className="w-10 h-10" src={icon} alt="Icon" />
+        <img className="w-15 h-15" src={icon} alt="Icon" />
 
         <p className="text-5xl">{`${temp.toFixed()}°`}</p>
 

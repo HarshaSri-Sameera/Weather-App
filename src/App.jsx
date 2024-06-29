@@ -39,14 +39,15 @@ function App() {
 
   const formatBackground = () => {
     if (!weather) return "from-slate-600 to-fuchsia-950";
-    const threshold = units === "metric" ? 20 : 60;
-    if (weather.temp <= threshold) return "from-slate-600 to-fuchsia-950";
-    return "from-yellow-400 to-orange-600";
+    const threshold = units === "metric" ? 25 : 70;
+    console.log(threshold);
+    if (weather.temp <= threshold) return "from-slate-600 to-teal-600";
+    return "from-sky-700 to-orange-600";
   };
 
   return (
     <div
-      className={`mx-auto max-w-screen-md mt-4 px-32 py-5 bg-gradient-to-br h-fit shadow-xl shadow-gray-400 ${formatBackground()}`}
+      className={`mx-auto max-w-screen-xl mt-4 mb-4 mr-4 ml-4 px-32 py-5 bg-gradient-to-br h-fit shadow-xl shadow-gray-400 ${formatBackground()}`}
     >
       <TopButtons setQuery={setQuery} />
       <Input setQuery={setQuery} setUnits={setUnits} />
